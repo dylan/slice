@@ -41,6 +41,11 @@ do {
 
 let files = cli.unparsedArguments
 
+guard files.count > 0 else {
+    cli.printUsage()
+    exit(EX_USAGE)
+}
+
 let rows = rowsOpt.value ?? 3
 let columns = columnsOpt.value ?? 3
 
