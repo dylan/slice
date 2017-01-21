@@ -14,8 +14,8 @@ extension NSImage {
         let srcWidth    = Int(self.size.width)
         let srcHeight   = Int(self.size.height)
 
-        let sliceWidth  = srcWidth / rows
-        let sliceHeight = srcHeight / cols
+        let sliceWidth  = srcWidth / cols
+        let sliceHeight = srcHeight / rows
 
         let sliceSize   = NSSize(width: sliceWidth, height: sliceHeight)
 

@@ -48,6 +48,7 @@ guard files.count > 0 else {
 
 let rows = rowsOpt.value ?? 3
 let columns = columnsOpt.value ?? 3
+print("Slicing with \(rows) rows and \(columns) columns..")
 
 func save(slices: [NSImage]?, from file: URL) {
     guard let imageSlices = slices else {
